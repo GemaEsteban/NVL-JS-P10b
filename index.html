@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numbersArray = new Array(50);
+        var paresArray = [];
+        var imparesArray = [];
+
+        for (var i = 0; i < 50; i++) {
+            numbersArray[i] = Math.floor((Math.random() * 100) + 1);
+
+            if (numbersArray[i]%2 === 0) {
+                paresArray.push(numbersArray[i]);
+            } else {
+                imparesArray.push(numbersArray[i]);
+            }
+        }
+
+        document.write(paresArray)
+        document.write(imparesArray)
+
+
+         
+        
+    </script>
+</body>
+</html>
